@@ -4,7 +4,7 @@ import get_data as gd
 import tester as ts
 
 
-bot = telebot.TeleBot('6103350951:AAHrZiXU61n0ti_3gSnBEa_5U21CZrUxNwQ')
+bot = telebot.TeleBot('5982175377:AAE3k3Creiey8WPMeeZe7YwHffaj61gpSo4')
 global categories, test_data, test_num, mark, cur_cat, cur_theme
 categories = gd.load_data()
 test_data = ts.load_data()
@@ -14,7 +14,7 @@ mark =""
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
     global categories, test_data, test_num, mark, cur_cat, cur_theme
-    help_message = "Сюда вставьте название и описание своего проекта" \
+    help_message = "Помощник для подготовки к ОГЭ по обществознанию" \
         " \n Для того чтобы получить информацию введите слово /info." \
         " \n Для того чтобы проверить свои знания введите слово /test."
 
